@@ -46,7 +46,7 @@ namespace SampleLib.itext7
             double x2 = topRight.Get(Vector.I1);
             double y1 = bottomLeft.Get(Vector.I2);
             double y2 = topRight.Get(Vector.I2);
-            double fontht = textinfo.GetFontSize();
+
             var tb = new TextBlock
             {
                 Text = textinfo.GetText(),
