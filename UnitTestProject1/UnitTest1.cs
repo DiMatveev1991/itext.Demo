@@ -46,8 +46,8 @@ namespace UnitTestProject1
             /// Invoke itext5
             ///
             Contracts.IExtractDocument extractor5 = new SampleLib.itext5.Class1();
-            var pages = extractor5.GetBlocks(contents);
-            Trace.WriteLine($"itextsharp5   Text={pages[0].Blocks[0]}");
+            var pages5 = extractor5.GetBlocks(contents);
+            Trace.WriteLine($"itextsharp5   Text={pages5[0].Blocks[0]}");
         }
     }
 }
