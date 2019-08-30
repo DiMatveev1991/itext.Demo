@@ -73,6 +73,19 @@ namespace UnitTestProject1
             var pagesV7 = extractorPdfium.GetBlocks(contents);
 
         }
+        /// <summary>
+        /// Troubleshooting assembly loading failures
+        /// </summary>
+        [TestMethod]
+        public void AssemblyLoadFailures()
+        {
+            string file = "data\\CS15.page6.pdf";
+            string folder = Util.GetProjectDir2();
+            string fullpath = System.IO.Path.Combine(folder, file);
+            byte[] contents = System.IO.File.ReadAllBytes(fullpath);
+            var c1 = new SampleLib.Pdfium.NetSDK.Dummy(contents);
+            c1.DoSomeStuff();
+        }
         [TestMethod]
         public void FireItext5_Pdfium()
         {
