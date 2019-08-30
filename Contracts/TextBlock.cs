@@ -32,9 +32,12 @@ namespace Contracts
                 return Math.Abs(this.Left - this.Right);
             }
         }
+
+        public float SpaceWidth { get; set; }
+
         public override string ToString()
         {
-            return string.Format("Text='{0}',Left={1},Right={2},Bottom={3},Top={4}, W={5},Ht={6}", Text, Left, Right, Bottom, Top,Width,Height);
+            return string.Format("Text='{0}',Left={1},Right={2},Bottom={3},Top={4}, W={5},Ht={6},Space={7}", Text, Left, Right, Bottom, Top,Width,Height,SpaceWidth);
         }
 
     }

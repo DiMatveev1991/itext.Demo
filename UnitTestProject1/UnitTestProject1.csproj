@@ -42,6 +42,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PdfiumNet.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />
@@ -66,6 +67,10 @@
     <ProjectReference Include="..\SampleLib.itext7\SampleLib.itext7.csproj">
       <Project>{99736f52-25ef-4f75-a58a-672519b18cc7}</Project>
       <Name>SampleLib.itext7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleLib.Pdfium.NetSDK\SampleLib.Pdfium.NetSDK.csproj">
+      <Project>{e49eab81-5f0a-4387-81bb-71ebeef5ee51}</Project>
+      <Name>SampleLib.Pdfium.NetSDK</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
