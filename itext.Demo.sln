@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleLib.itext7", "SampleL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{3C8E3C40-F65B-4D44-8C8D-D91DD3130B95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleLib.Pdfium.NetSDK", "SampleLib.Pdfium.NetSDK\SampleLib.Pdfium.NetSDK.csproj", "{E49EAB81-5F0A-4387-81BB-71EBEEF5EE51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleLib.Pdfium.NetSDK", "SampleLib.Pdfium.NetSDK\SampleLib.Pdfium.NetSDK.csproj", "{E49EAB81-5F0A-4387-81BB-71EBEEF5EE51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppFwk", "ConsoleAppFwk\ConsoleAppFwk.csproj", "{AA21C5A9-8725-41C2-891B-CC24494F1E9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E49EAB81-5F0A-4387-81BB-71EBEEF5EE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E49EAB81-5F0A-4387-81BB-71EBEEF5EE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E49EAB81-5F0A-4387-81BB-71EBEEF5EE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA21C5A9-8725-41C2-891B-CC24494F1E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA21C5A9-8725-41C2-891B-CC24494F1E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA21C5A9-8725-41C2-891B-CC24494F1E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA21C5A9-8725-41C2-891B-CC24494F1E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
