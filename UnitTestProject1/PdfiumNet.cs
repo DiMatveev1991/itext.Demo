@@ -79,12 +79,19 @@ namespace UnitTestProject1
         [TestMethod]
         public void AssemblyLoadFailures()
         {
-            string file = "data\\CS15.page6.pdf";
-            string folder = Util.GetProjectDir2();
-            string fullpath = System.IO.Path.Combine(folder, file);
-            byte[] contents = System.IO.File.ReadAllBytes(fullpath);
-            var c1 = new SampleLib.Pdfium.NetSDK.Dummy(contents);
-            c1.DoSomeStuff();
+            try
+            {
+                string file = "data\\CS15.page6.pdf";
+                string folder = Util.GetProjectDir2();
+                string fullpath = System.IO.Path.Combine(folder, file);
+                byte[] contents = System.IO.File.ReadAllBytes(fullpath);
+                var c1 = new SampleLib.Pdfium.NetSDK.Dummy(contents);
+                c1.DoSomeStuff();
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine(ex.ToString());
+            }
         }
         [TestMethod]
         public void FireItext5_Pdfium()
@@ -120,6 +127,27 @@ namespace UnitTestProject1
             Trace.WriteLine($"Gap between 2 rows={gapBetweenRowsVium}");
             Trace.WriteLine("-------------------------------------------");
 
+        }
+        [TestMethod]
+        public void Rotation_TOBEDONE()
+        {
+            throw new NotImplementedException();
+        }
+        [TestMethod]
+        public void Dutta_TOBEDONE()
+        {
+            /*
+             * 
+             MRB5
+             baml5
+             TopDownCharts
+             */ 
+            throw new NotImplementedException();
+        }
+        [TestMethod]
+        public void GetTextColor()
+        {
+            throw new NotImplementedException();
         }
     }
 }

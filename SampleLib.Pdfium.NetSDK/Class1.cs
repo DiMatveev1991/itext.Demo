@@ -22,6 +22,7 @@ namespace SampleLib.Pdfium.NetSDK
                     oNewPage.Width = page.Width;
                     oNewPage.Height = page.Height;
                     var pageObjects = page.PageObjects;
+                    var rotation = page.Rotation;//Funny!
                     var lstTinyBlocks = new List<TextBlock>();
                     float widthSpace;
 
