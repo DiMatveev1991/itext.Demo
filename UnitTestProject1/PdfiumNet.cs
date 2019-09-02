@@ -91,6 +91,7 @@ namespace UnitTestProject1
             catch (Exception ex)
             {
                 Trace.WriteLine(ex.ToString());
+                Assert.Fail();
             }
         }
         [TestMethod]
